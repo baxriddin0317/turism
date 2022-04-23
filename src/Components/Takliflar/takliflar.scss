@@ -1,0 +1,14 @@
+.cards{
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .cards{
+        .mySwiper{
+            
+            .swiper-wrapper{
+                justify-content: space-between;
+            }
+        }
+    }
+}

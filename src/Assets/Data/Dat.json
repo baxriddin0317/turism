@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "umra safari",
+        "img": "https://www.gazeta.uz/media/img/2021/07/Lk99JO16273882739228_b.jpg",
+        "day": "15 kun",
+        "sana": "12.04.2022",
+        "sum": "700000 sum",
+        "dollor": "700 $"
+    },
+    {
+        "id": 2,
+        "title": "haj safari",
+        "img": "https://darakchi.uz/storage/18/6b/9c/23061/conversions/OA_kPTKmIbYrUhQ6akdWMVaWHptql_2l-xl.jpg",
+        "day": "8 kun",
+        "sana": "16.04.2022",
+        "sum": "400000 sum",
+        "dollor": "400 $"
+    },
+    {
+        "id": 3,
+        "title": "ko'xna samarqand",
+        "img": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/f3/9d/a9/photo2jpg.jpg?w=700&h=500&s=1",
+        "day": "5 kun",
+        "sana": "12.04.2022",
+        "sum": "300000 sum",
+        "dollor": "300 $"
+    },
+    {
+        "id": 4,
+        "title": "afsonaviy buxoro",
+        "img": "https://obfm.uz/uploads/2020/07/buxoro.jpg",
+        "day": "8 kun",
+        "sana": "16.04.2022",
+        "sum": "400000 sum",
+        "dollor": "400 $"
+    },
+    {
+        "id": 5,
+        "title": "ulug'vor xiva",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/d/dc/View_from_the_city_walls%2C_Khiva_%284934484894%29.jpg",
+        "day": "10 kun",
+        "sana": "10.04.2022",
+        "sum": "200000 sum",
+        "dollor": "200 $"
+    },
+    {
+        "id": 6,
+        "title": "toshkent",
+        "img": "https://static.educalingo.com/img/en/800/tashkent.jpg",
+        "day": "5 kun",
+        "sana": "02.04.2022",
+        "sum": "600000 sum",
+        "dollor": "600 $"
+    }
+]

@@ -1,0 +1,49 @@
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    &__group{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        input{
+            width: 90%;
+            margin-bottom: 30px;
+            padding: 15px 10px;
+            font-size: 18px;
+            outline: none;
+        }
+
+        textarea{
+            outline: none;
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+
+    &__btn{
+        width: 150px;
+        margin-top: 30px;
+        padding: 10px 0;
+        background: #ffba3a;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .form{
+        flex-direction: column;
+
+        &__group{
+            input{
+                width: 100%;
+            }
+        }
+    }
+}
