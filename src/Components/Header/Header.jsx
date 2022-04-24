@@ -1,9 +1,12 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom';
 import './header.scss'
 
 function Header() {
     //header scroll bolgandegi events
     const headerRef = useRef();
+
+    const [hum, setHum] = useState(false);
 
     // ==== scroll =====
     useEffect(() => {
@@ -25,9 +28,11 @@ function Header() {
         <div className="container">
             <nav className="header__nav" >
                 <h1 className="header__brend">
-                    Brend
+                   <Link to={"/"}>
+                       Brend
+                   </Link>
                 </h1>
-                <ul className='header__list'>
+                <ul className={hum ? 'header__list list-active' : 'header__list'} onClick={() => setHum(false)} >
                     <li className="header__item">
                         <a href='#home'>Home</a>
                     </li>
@@ -47,12 +52,14 @@ function Header() {
                     {/* ==== select language ==== */}
                     <form action="#">
                         <select name="lenuage" id="select" className='header__item-select'>
-                            <option value="Uz">Uz</option>
+                            <option value="Uz">
+                                Uz
+                            </option>
                             <option value="Ru">Ru</option>
                             <option value="Eng">Eng</option>
                         </select>
                     </form>
-                    <button className='header__humburger'>
+                    <button className='header__humburger' onClick={() => setHum(true)}>
                     <i className='bx bx-menu'></i>
                     </button>
                 </div>

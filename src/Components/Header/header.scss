@@ -11,7 +11,9 @@
 
     &__brend{
         font-size: 32px;
-        color: #fff;
+        a{
+            color: #fff;
+        }
     }
 
     &__list{
@@ -97,12 +99,37 @@
 
 @media only screen and (max-width: 561px){
     .header{
+        position: relative;
+
         &__humburger{
             display: inline-block;
         }
 
         &__list{
             display: none;
+        }
+
+        &__list.list-active{
+            display: flex;
+            position: absolute;
+            background-color: rgba($color: #000000, $alpha: 0.8);
+            color: #fff;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__item~&__item{
+            margin-left: 0;
+        }
+
+        &__item{
+            margin-bottom: 30px;
+            font-size: 28px;
         }
     }
 }

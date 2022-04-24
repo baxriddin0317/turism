@@ -78,3 +78,22 @@
     }
 
 }
+
+@media screen and (max-width: 781px){
+    .detaly{
+        flex-direction: column-reverse;
+        
+        &__block{
+            width: 100%;
+        }       
+
+        &__box{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__info{
+            width: 100%;
+        }
+    }
+}

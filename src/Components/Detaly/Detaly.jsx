@@ -78,8 +78,11 @@ function Detaly() {
         </p>
       </div>
 
-      <h1 className="title">Savol va takliflar uchun</h1>
-      <Form />
+        {/* ==== aloqa ==== */}
+        <section className="main__section" id='contact'>
+            <h1 className="title">Savol va takliflar uchun</h1>
+            <Form />
+        </section>
 
       
     </div>
