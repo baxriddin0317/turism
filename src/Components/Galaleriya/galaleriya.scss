@@ -1,0 +1,24 @@
+.foto__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.foto__item{
+    width: 400px;
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 30px;
+
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+
+    img{
+        object-fit: cover;
+        transition: all 0.5s ease;
+    }
+}

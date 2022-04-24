@@ -3,6 +3,7 @@ import About from '../About/About'
 import Block from '../Block/Block'
 import Conveniences from '../Conveniences/Conveniences'
 import Form from '../Form/Form'
+import Galaleriya from '../Galaleriya/Galaleriya'
 import Jumbotron from '../Jumbotron/Jumbotron'
 import Takliflar from '../Takliflar/Takliflar'
 
@@ -36,6 +37,14 @@ function Main() {
         <section className='main__section container' id='info'>
           <h1 className="title">Biz haqimizda</h1>
           <About />
+        </section>
+
+        {/* ==== galareyia ===== */}
+        <section className='main__section container'>
+          <h1 className="title">
+            Galaleriya
+          </h1>
+          <Galaleriya />
         </section>
 
         {/* ==== aloqa ==== */}
