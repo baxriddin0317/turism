@@ -22,3 +22,20 @@
         transition: all 0.5s ease;
     }
 }
+
+@media screen and (max-width: 830px){
+    .foto__list{
+        justify-content: center;
+    }
+
+    // .foto__item{
+    //     width: 45%;
+    // }
+}
+
+@media screen and (max-width: 830px){
+ .foto__item{
+     width: 100%;
+
+ }
+}
