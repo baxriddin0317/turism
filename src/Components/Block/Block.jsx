@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import Umra from '../../Assets/Img/umra.jpg';
 import Haj from '../../Assets/Img/xaj.jpg';
 
-function Block() {
+import Language from '../../Assets/Content';
+
+function Block({lang}) {
   return (
     <div className='block'>
         <div className="block__item">
@@ -16,7 +18,9 @@ function Block() {
                 <p className="block__text">
                     Lorem ipsum dolor sit amet consectetur.
                 </p>
-                <Link to={"/detaly/1"} className="block__btn">Batafsil</Link>
+                <Link to={"/detaly/1"} className="block__btn">
+                    {Language[lang].read}
+                </Link>
             </div>
         </div>
         <div className="block__item">
@@ -28,7 +32,9 @@ function Block() {
                 <p className="block__text">
                     Lorem ipsum dolor sit amet consectetur.
                 </p>
-                <Link to={"/detaly/2"} className="block__btn">Batafsil</Link>
+                <Link to={"/detaly/2"} className="block__btn">
+                    {Language[lang].read}
+                </Link>
             </div>
         </div>
     </div>

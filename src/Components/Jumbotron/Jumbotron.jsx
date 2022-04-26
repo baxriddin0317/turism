@@ -1,17 +1,21 @@
 import React from 'react'
 import './jumbotron.scss'
 
-function Jumbotron() {
+import Language from '../../Assets/Content'
+
+function Jumbotron({lang}) {
   return (
     <section className='jumbotron' id='home'>
         <div className="jumbotron__block">
             <h1 className="jumbotron__title">
-                biz bilan sayoxat qiling
+                {Language[lang].jTitle}
             </h1>
             <p className="jumbotron__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae reprehenderit temporibus commodi?
+            {Language[lang].jText}
             </p>
-            <a href='#info' className='jumbotron__btn'>Biz haqimizda</a>
+            <a href='#info' className='jumbotron__btn'>
+            {Language[lang].about}
+            </a>
         </div>
     </section>
   )

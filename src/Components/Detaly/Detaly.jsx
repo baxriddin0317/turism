@@ -4,7 +4,9 @@ import Data from '../../Assets/Data/Dat.json'
 import Form from '../Form/Form';
 import './detaly.scss'
 
-function Detaly() {
+import Language from '../../Assets/Content';
+
+function Detaly({lang}) {
     let {code} = useParams();
 
     let num = parseInt(code);
@@ -56,14 +58,14 @@ function Detaly() {
 
           <div className="detaly__box">
             <h2 className="detaly__title">
-              Buyurtma berish
+              {Language[lang].order}
             </h2>
             <form className='detaly__form' action="#">
-              <input type="text" placeholder='Ismingiz' />
+              <input type="text" placeholder={Language[lang].inputName} />
               <input type="tel" placeholder='Telifon nomer' />
               <button className='detaly__form-btn' type='submit'>
                 <i className='bx bxl-paypal'></i>
-                PayPal orqali tolov
+                {Language[lang].pay}
               </button>
             </form>
           </div>
@@ -79,9 +81,11 @@ function Detaly() {
       </div>
 
         {/* ==== aloqa ==== */}
-        <section className="main__section" id='contact'>
-            <h1 className="title">Savol va takliflar uchun</h1>
-            <Form />
+        <section className="main__section container" id='contact'>
+            <h1 className="title">
+            {Language[lang].question}
+            </h1>
+            <Form lang={lang} />
         </section>
 
       

@@ -7,50 +7,62 @@ import Galaleriya from '../Galaleriya/Galaleriya'
 import Jumbotron from '../Jumbotron/Jumbotron'
 import Takliflar from '../Takliflar/Takliflar'
 
-function Main() {
+import Language from '../../Assets/Content'
+
+function Main({lang}) {
   return (
     <>
       {/* ==== Jumbotron sart ==== */}
-      <Jumbotron />
+      <Jumbotron lang={lang} />
       {/* ==== Jumbotron end ==== */}
       
       <main className="main">
 
         <section className="main__section container" id='manzillar'>
-          <h1 className='title'>Asosiy manzillar</h1>
-          <Block />
+          <h1 className='title'>
+            {Language[lang].addresses}
+          </h1>
+          <Block lang={lang} />
         </section>
 
         {/* ==== corousel ==== */}
         <section className="main__section container">
-          <h1 className="title">Yana</h1>
-          <Takliflar />
+          <h1 className="title">
+            {Language[lang].yana}
+          </h1>
+          <Takliflar lang={lang} />
         </section>
 
         {/* ==== ustunliklarimiz ==== */}
         <section className='main__section container' id='info'>
-          <h1 className="title">Ustunliklarimiz</h1>
+          <h1 className="title">
+          {Language[lang].advantages}
+          </h1>
           <Conveniences />
         </section>
 
         {/* ==== biz haqimizda ==== */}
         <section className='main__section container' id='info'>
-          <h1 className="title">Biz haqimizda</h1>
+          <h1 className="title">
+            {Language[lang].about}
+          </h1>
           <About />
         </section>
 
         {/* ==== galareyia ===== */}
         <section className='main__section container'>
           <h1 className="title">
-            Galaleriya
+          {Language[lang].galaleriya}
           </h1>
           <Galaleriya />
         </section>
 
         {/* ==== aloqa ==== */}
         <section className="main__section container" id='contact'>
-            <h1 className="title">Savol va takliflar uchun</h1>
-            <Form />
+            <h1 className="title">
+            {Language[lang].question}
+            </h1>
+            <Form lang={lang} />
         </section>
       </main>
 

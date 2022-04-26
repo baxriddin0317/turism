@@ -14,7 +14,7 @@ import { FreeMode, Pagination, Navigation, Autoplay } from "swiper";
 import Card from '../Card/Card';
 import Data from '../../Assets/Data/Dat.json';
 
-function Takliflar() {
+function Takliflar({lang}) {
 
   return (
     <div className='cards'>
@@ -50,7 +50,7 @@ function Takliflar() {
       >
         {Data.map(data => (
           <SwiperSlide key={data.id}>
-            <Card data={data} />
+            <Card data={data} lang={lang} />
           </SwiperSlide>
         ))}
     </Swiper>

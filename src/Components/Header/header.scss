@@ -29,6 +29,7 @@
         a{
             font-size: 18px;
             color: #fff;
+            text-transform: capitalize;
 
             &:hover{
                 color: #ffd78c;
@@ -36,12 +37,13 @@
         }
 
         &-select{
-            width: 50px;
+            width: 70px;
             border: 1px solid #FFBA3A;
             color: #fff;
             background-color: #FFBA3A;
             outline: none;
             font-size: 18px;
+            
         }
     }
     

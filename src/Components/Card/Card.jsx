@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './card.scss';
 
-function Card({data}) {
+import Language from '../../Assets/Content';
+
+function Card({data, lang}) {
 
   return (
     <div className='card'>
@@ -30,7 +32,9 @@ function Card({data}) {
               </div>
           </div>
 
-          <Link to={`/detaly/${data.id}`} className="card__btn">Batafsil</Link>
+          <Link to={`/detaly/${data.id}`} className="card__btn">
+            {Language[lang].read}
+          </Link>
         </div>
     </div>
   )

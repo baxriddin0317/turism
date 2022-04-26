@@ -3,10 +3,10 @@ import { Outlet } from 'react-router-dom'
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
 
-function Layaout() {
+function Layaout({lang, setLang}) {
   return (
     <>
-        <Header />
+        <Header lang={lang} setLang={setLang} />
 
         <Outlet />
 
