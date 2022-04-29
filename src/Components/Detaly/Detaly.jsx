@@ -1,18 +1,18 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import Data from '../../Assets/Data/Dat.json'
+// import Data from '../../Assets/Data/Dat.json'
 import Form from '../Form/Form';
 import './detaly.scss'
 
 import Language from '../../Assets/Content';
 
-function Detaly({lang}) {
+function Detaly({lang, Data}) {
     let {code} = useParams();
 
     let num = parseInt(code);
 
     let obj = Data.find(d => d.id === num)
-
+    console.log(obj);
   return (
     <div className='container'>
       <div className='detaly'>
@@ -26,7 +26,7 @@ function Detaly({lang}) {
                   Ziyorat qilinadigon shaxar
                 </p>
                 <p className="detaly__item-text">
-                  {obj.title}
+                  {obj.citys}
                 </p>
               </li>
               <li className="detaly__item">
@@ -34,7 +34,7 @@ function Detaly({lang}) {
                   Ziyorat qilish vaqti
                 </p>
                 <p className="detaly__item-text">
-                  {obj.day}
+                  {obj.days}
                 </p>
               </li>
               <li className="detaly__item">
@@ -42,7 +42,7 @@ function Detaly({lang}) {
                   Narx (UZB)
                 </p>
                 <p className="detaly__item-text">
-                  {obj.sum}
+                  {obj.price_uzs} sum
                 </p>
               </li>
               <li className="detaly__item">
@@ -50,7 +50,7 @@ function Detaly({lang}) {
                   Narx ($USD)
                 </p>
                 <p className="detaly__item-text">
-                  {obj.dollor}
+                  {obj.price_usd} $
                 </p>
               </li>
             </ul>
@@ -73,10 +73,10 @@ function Detaly({lang}) {
 
       <div className="detaly__info">
         <h2 className="detaly__title">
-          {obj.title} haqida sizni qiziqtiruvchi ma`lumotlar
+          {obj.citys} haqida sizni qiziqtiruvchi ma`lumotlar
         </h2>
         <p className="detaly__text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam optio nobis accusamus qui laudantium totam, architecto iure consectetur quo ipsam quisquam! Inventore sed at quod neque doloribus, repellendus blanditiis repudiandae unde libero consequuntur vero recusandae eius cum non quis laboriosam ratione sequi in nam tenetur. Sed neque iure quisquam cum voluptatum pariatur ipsum mollitia nisi alias perspiciatis porro corporis, nesciunt corrupti fugit, dicta sapiente repellendus vero tenetur fuga magnam repellat unde? Non adipisci in perferendis sapiente alias culpa minus tempora?
+          {obj.description}
         </p>
       </div>
 

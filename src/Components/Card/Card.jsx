@@ -8,7 +8,7 @@ function Card({data, lang}) {
 
   return (
     <div className='card'>
-        <img src={data.img} alt="" />
+        <img src={data.image_url} alt="" />
         <div className="card__block">
           <h2 className="card__title">
               {data.title}
@@ -16,18 +16,18 @@ function Card({data, lang}) {
           <div className="card__flex">
               <div>
                 <h3 className="card__flex-title">
-                  {data.day}
+                  {data.days}
                 </h3>
                 <span className='card__flex-span'>
-                  {data.sana}
+                  {data.go_date}
                 </span>
               </div>
               <div>
                 <h3 className="card__flex-title">
-                  {data.sum}
+                  {data.price_uzs} sum
                 </h3>
                 <span className="card__flex-span">
-                  {data.dollor}
+                  {data.price_usd} $
                 </span>
               </div>
           </div>

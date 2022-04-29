@@ -9,7 +9,7 @@ import Takliflar from '../Takliflar/Takliflar'
 
 import Language from '../../Assets/Content'
 
-function Main({lang}) {
+function Main({lang, Data}) {
   return (
     <>
       {/* ==== Jumbotron sart ==== */}
@@ -22,7 +22,7 @@ function Main({lang}) {
           <h1 className='title'>
             {Language[lang].addresses}
           </h1>
-          <Block lang={lang} />
+          <Block lang={lang} Data={Data} />
         </section>
 
         {/* ==== corousel ==== */}
@@ -30,7 +30,7 @@ function Main({lang}) {
           <h1 className="title">
             {Language[lang].yana}
           </h1>
-          <Takliflar lang={lang} />
+          <Takliflar lang={lang} Data={Data} />
         </section>
 
         {/* ==== ustunliklarimiz ==== */}
@@ -38,7 +38,7 @@ function Main({lang}) {
           <h1 className="title">
           {Language[lang].advantages}
           </h1>
-          <Conveniences />
+          <Conveniences lang={lang} />
         </section>
 
         {/* ==== biz haqimizda ==== */}

@@ -1,34 +1,33 @@
 import React from 'react'
 import './conveniences.scss'
 
-function Conveniences() {
+import Data from "../../Assets/Content"
+
+function Conveniences({lang}) {
   return (
     <ul className='convenlist'>
         <li className="convenlist__item">
             <h3 className="convenlist__title">
-                Visa hizmati
+                {Data[lang].conven.title1}
             </h3>
             <p className="convenlist__text">
-                Mijozlarimiz Umra safari uchun vizadan havotir olmasaham bo'ladi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi harum voluptate non repudiandae ea. Non cupiditate rem repellendus tempora ea!
+                {Data[lang].conven.text1}
             </p>
         </li>
         <li className="convenlist__item">
             <h3 className="convenlist__title">
-                5 yulduzli mehmonhona
+                {Data[lang].conven.title2}
             </h3>
             <p className="convenlist__text">
-                Mijozlarimiz uchun Madina shaxridagi eng nufuzli mehmonhodalar.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi harum voluptate non repudiandae ea. Non cupiditate rem repellendus tempora ea!
+                {Data[lang].conven.text2}
             </p>
         </li>
         <li className="convenlist__item">
             <h3 className="convenlist__title">
-                Transpor hizmati
+                {Data[lang].conven.title3}
             </h3>
             <p className="convenlist__text">
-                Ziyoratgohlarga borish uchun doyimiy transport xizmati.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi harum voluptate non repudiandae ea. Non cupiditate rem repellendus tempora ea!
+                {Data[lang].conven.text3}
             </p>
         </li>
     </ul>

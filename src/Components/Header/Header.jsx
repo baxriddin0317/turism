@@ -72,7 +72,7 @@ function Header({lang, setLang}) {
                                 Uz
                             </option>
                             <option value="ru">Ru</option>
-                            <option value="eng">Eng</option>
+                            <option value="en">Eng</option>
                         </select>
                     </form>
                     <button className='header__humburger' onClick={() => setHum(true)}>

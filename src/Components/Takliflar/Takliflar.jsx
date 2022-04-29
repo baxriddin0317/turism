@@ -12,10 +12,10 @@ import "swiper/css/navigation";
 // import required modules
 import { FreeMode, Pagination, Navigation, Autoplay } from "swiper";
 import Card from '../Card/Card';
-import Data from '../../Assets/Data/Dat.json';
 
-function Takliflar({lang}) {
+function Takliflar({lang, Data}) {
 
+  
   return (
     <div className='cards'>
     <Swiper
