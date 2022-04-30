@@ -6,6 +6,16 @@ import Language from '../../Assets/Content';
 
 function Block({lang, Data}) {
     let arr = Data.slice(0,2);
+    
+    const funLang = (d) => {
+        if(lang === "uz"){
+            return d.description
+        }else if(lang === "en"){
+            return d.description_en
+        }else{
+            return d.description_ru
+        }
+    }
   return (
     <div className='block'>
         {
@@ -17,9 +27,7 @@ function Block({lang, Data}) {
                             {d.title}
                         </h2>
                         <p className="block__text">
-                            {
-                                d.description
-                            }
+                            {funLang(d)}
                         </p>
                         <Link to={`/detaly/${d.id}`} className="block__btn">
                             {Language[lang].read}

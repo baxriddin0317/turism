@@ -8,6 +8,8 @@
         background-color: #fff;
         border-right: 1px solid rgba(#ffba3a, 0.7);
         padding: 20px 10px 20px 20px;
+        height: 100%;
+        width: 70%;
     }
 
     &__text{
@@ -33,7 +35,7 @@
     }
 
     &__img{
-        width: 100%;
+        width: 30%;
         overflow: hidden;
 
         &:hover{
@@ -54,7 +56,13 @@
     .about{
         flex-direction: column-reverse;
 
+        &__information{
+            width: 100%;
+            border: 0;
+        }
+
         &__img{
+            width: 100%;
             img{
                 height: 70%;
             }

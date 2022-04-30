@@ -9,6 +9,26 @@ import Language from '../../Assets/Content';
 function Detaly({lang, Data}) {
     let {code} = useParams();
 
+    const funLang = (d) => {
+      if(lang === "uz"){
+          return d.description
+      }else if(lang === "en"){
+          return d.description_en
+      }else{
+          return d.description_ru
+      }
+    }
+
+    const funCitys = (d) => {
+      if(lang === "uz"){
+          return d.citys
+      }else if(lang === "en"){
+          return d.citys_en
+      }else{
+          return d.citys_ru
+      }
+    }
+
     let num = parseInt(code);
 
     let obj = Data.find(d => d.id === num)
@@ -26,7 +46,7 @@ function Detaly({lang, Data}) {
                   Ziyorat qilinadigon shaxar
                 </p>
                 <p className="detaly__item-text">
-                  {obj.citys}
+                  {funCitys(obj)}
                 </p>
               </li>
               <li className="detaly__item">
@@ -73,10 +93,10 @@ function Detaly({lang, Data}) {
 
       <div className="detaly__info">
         <h2 className="detaly__title">
-          {obj.citys} haqida sizni qiziqtiruvchi ma`lumotlar
+          {funCitys(obj)} haqida sizni qiziqtiruvchi ma`lumotlar
         </h2>
         <p className="detaly__text">
-          {obj.description}
+          {funLang(obj)}
         </p>
       </div>
 

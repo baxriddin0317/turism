@@ -46,7 +46,7 @@ function Main({lang, Data}) {
           <h1 className="title">
             {Language[lang].about}
           </h1>
-          <About />
+          <About lang={lang} />
         </section>
 
         {/* ==== galareyia ===== */}
