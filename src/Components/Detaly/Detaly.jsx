@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 // import Data from '../../Assets/Data/Dat.json'
 import Form from '../Form/Form';
 import './detaly.scss'
+import Dat from "../../Assets/Data/Dat.json"
 
 import Language from '../../Assets/Content';
 
@@ -31,9 +32,9 @@ function Detaly({lang, Data}) {
 
     let num = parseInt(code);
 
-    let obj = Data.find(d => d.id === num)
-    console.log(obj);
-  return (
+    let obj = Dat.find(d => d.id === num)
+
+    return (
     <div className='container'>
       <div className='detaly'>
           <div className="detaly__block">
@@ -46,7 +47,7 @@ function Detaly({lang, Data}) {
                   Ziyorat qilinadigon shaxar
                 </p>
                 <p className="detaly__item-text">
-                  {funCitys(obj)}
+                  {obj.title}
                 </p>
               </li>
               <li className="detaly__item">
@@ -54,7 +55,7 @@ function Detaly({lang, Data}) {
                   Ziyorat qilish vaqti
                 </p>
                 <p className="detaly__item-text">
-                  {obj.days}
+                  {obj.day}
                 </p>
               </li>
               <li className="detaly__item">
@@ -62,7 +63,7 @@ function Detaly({lang, Data}) {
                   Narx (UZB)
                 </p>
                 <p className="detaly__item-text">
-                  {obj.price_uzs} sum
+                  {obj.sum}
                 </p>
               </li>
               <li className="detaly__item">
@@ -70,7 +71,7 @@ function Detaly({lang, Data}) {
                   Narx ($USD)
                 </p>
                 <p className="detaly__item-text">
-                  {obj.price_usd} $
+                  {obj.dollor}
                 </p>
               </li>
             </ul>
@@ -93,10 +94,10 @@ function Detaly({lang, Data}) {
 
       <div className="detaly__info">
         <h2 className="detaly__title">
-          {funCitys(obj)} haqida sizni qiziqtiruvchi ma`lumotlar
+          {obj.title} haqida sizni qiziqtiruvchi ma`lumotlar
         </h2>
         <p className="detaly__text">
-          {funLang(obj)}
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio voluptatum tempora sit inventore nemo rem et rerum dicta unde cumque nulla esse fuga distinctio atque, voluptates error consequuntur consectetur vitae.
         </p>
       </div>
 

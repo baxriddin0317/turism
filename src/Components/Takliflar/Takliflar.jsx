@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 // import required modules
 import { FreeMode, Pagination, Navigation, Autoplay } from "swiper";
 import Card from '../Card/Card';
+import Dat from "../../Assets/Data/Dat.json"
 
 function Takliflar({lang, Data}) {
 
@@ -48,7 +49,7 @@ function Takliflar({lang, Data}) {
         modules={[FreeMode, Pagination, Navigation, Autoplay]}
         className="mySwiper"
       >
-        {Data.map(data => (
+        {Dat.map(data => (
           <SwiperSlide key={data.id}>
             <Card data={data} lang={lang} />
           </SwiperSlide>
