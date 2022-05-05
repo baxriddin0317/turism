@@ -10,25 +10,25 @@ import Language from '../../Assets/Content';
 function Detaly({lang, Data}) {
     let {code} = useParams();
 
-    const funLang = (d) => {
-      if(lang === "uz"){
-          return d.description
-      }else if(lang === "en"){
-          return d.description_en
-      }else{
-          return d.description_ru
-      }
-    }
+    // const funLang = (d) => {
+    //   if(lang === "uz"){
+    //       return d.description
+    //   }else if(lang === "en"){
+    //       return d.description_en
+    //   }else{
+    //       return d.description_ru
+    //   }
+    // }
 
-    const funCitys = (d) => {
-      if(lang === "uz"){
-          return d.citys
-      }else if(lang === "en"){
-          return d.citys_en
-      }else{
-          return d.citys_ru
-      }
-    }
+    // const funCitys = (d) => {
+    //   if(lang === "uz"){
+    //       return d.citys
+    //   }else if(lang === "en"){
+    //       return d.citys_en
+    //   }else{
+    //       return d.citys_ru
+    //   }
+    // }
 
     let num = parseInt(code);
 
